@@ -330,7 +330,7 @@ If you try another transmitter or board, please open an issue with your results 
 | Radio Controller Firmware version | v1.4.6a (A12s) |
 | PPM voltage at OUT pin | not tested |
 | Signal polarity (RISING or FALLING works) | not tested |
-| Channels detected | 12 |
+| Channels detected | 4 (radiolink_ppm.ino) |
 | Frame rate | not tested |
 | Measured min / max (µs) | ___ / ___  (not tested) |
 | `joy.cpl` shows all axes moving | ☑ |
@@ -359,8 +359,11 @@ Ideas for later:
 └── firmware/
     ├── ppm_test/
     │   └── ppm_test.ino              # step 1: check the PPM signal
-    └── ppm_usb_joystick/
-        └── ppm_usb_joystick.ino      # step 2: the USB joystick firmware
+    |── ppm_usb_joystick/
+    |   └── ppm_usb_joystick.ino      # step 2: the USB joystick firmware for testing
+    └── radiolink_ppm/
+        └── radiolink_ppm.ino         # upload plug and play : the USB joystick firmware for Radiolink at10ii RC
+
 ```
 
 ## Contributing
