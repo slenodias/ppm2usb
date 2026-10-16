@@ -189,6 +189,8 @@ Using a board with native USB (Leonardo, Pro Micro, Teensy, RP2040, ESP32-S2/S3)
 
 <img width="521" height="213" alt="radiolink_ppm_port" src="https://github.com/user-attachments/assets/00063421-3218-4603-8ef0-f2799109a1c9" />
 
+<img width="401" height="640" alt="connections" src="https://github.com/user-attachments/assets/0eae5d9c-8c4f-4b27-a185-433b9ce72805" />
+
 
 The AT10 II manual lists these signals for the trainer/simulator port:
 
