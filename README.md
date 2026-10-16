@@ -217,7 +217,8 @@ Before connecting anything:
 
 - Install the [Arduino IDE](https://www.arduino.cc/en/software).
 - Select **Tools → Board → Arduino Leonardo**.
-- Install the **ArduinoJoystickLibrary** (Matthew Heironimus). It is not in the Library Manager: download the ZIP from its GitHub page and use *Sketch → Include Library → Add .ZIP Library*.
+- Download the ArduinoJoystickLibrary by Matthew Heironimus using the direct ZIP [download link](https://github.com/MHeironimus/ArduinoJoystickLibrary/archive/refs/heads/master.zip).
+- After downloading, open Arduino IDE and select Sketch → Include Library → Add .ZIP Library.
 
 ### 2. Test the PPM signal first
 
@@ -266,6 +267,8 @@ Any simulator that accepts a generic USB joystick should work. In each one you w
 
 | Simulator | Cost | Status with this project |
 |---|---|---|
+| Nexus-FPV by webXOS | Browser based FPV Quadcopter SIM | Verfied & Tested |
+| FPV freerider by John Holmvall | Computer App | Verified & tested |
 | Orqa FPV.SkyDive | Free-to-play on Steam | Not yet verified. Please report |
 | Velocidrone | Paid | Not yet verified |
 | Liftoff | Paid | Not yet verified |
@@ -317,19 +320,21 @@ If you try another transmitter or board, please open an issue with your results 
 
 ## Verification log
 
-Fill this in with your own measurements so others can compare. (Maintainer: replace the blanks after your hardware test.)
+
 
 | Item | Result |
 |---|---|
+| Arduino-IDE version | 2.3.10 |
+| Arduino Joystick Library by Matthew Heironimus version | v2.1.1 |
 | Transmitter | Radiolink AT10 II |
-| Firmware version / date | |
-| PPM voltage at OUT pin | ___ V |
-| Signal polarity (RISING or FALLING works) | |
-| Channels detected | ___ |
-| Frame rate | ___ fps |
-| Measured min / max (µs) | ___ / ___ |
-| `joy.cpl` shows all axes moving | ☐ |
-| Simulator tested and result | |
+| Radio Controller Firmware version | v1.4.6a (A12s) |
+| PPM voltage at OUT pin | not tested |
+| Signal polarity (RISING or FALLING works) | not tested |
+| Channels detected | 12 |
+| Frame rate | not tested |
+| Measured min / max (µs) | ___ / ___  (not tested) |
+| `joy.cpl` shows all axes moving | ☑ |
+| Simulator tested and result | only tetsted with nexus FPV simulator and FPV freerider simulator |
 
 ## Limitations and roadmap
 
@@ -340,13 +345,10 @@ Current limitations:
 - Calibration constants are set in the source code and are the same for all channels.
 
 Ideas for later:
-
+- [ ] Add wireless operation using two nRF24L01 modules: an Arduino Nano reads PPM from the Radiolink transmitter and sends the channel data wirelessly to an nRF24L01 receiver connected to the Arduino Leonardo, which acts as the USB game controller
 - [ ] Expose channels 9+ as extra axes, or convert switch channels to buttons
-- [ ] Per-channel calibration and center trim, stored in EEPROM
-- [ ] Failsafe behaviour on signal loss
 - [ ] Port to ESP32-S3 (native USB) with a live channel display on its LCD
-- [ ] Compatibility notes for other transmitters
-- [ ] Photos and a wiring diagram of the finished setup
+- [ ] Compatibility notes for other transmitter
 
 ## Repository layout
 
