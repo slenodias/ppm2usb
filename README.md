@@ -14,7 +14,7 @@ Commercial "RC flight simulator cables" do this one job: they read the transmitt
 ## Demo
 https://github.com/user-attachments/assets/2820df99-42f7-46e2-8c88-e9992d0a29b9
 
-*Video: FPV Freerider demo video.*
+*Video: FPV Freerider demo video. ( hehe i am not that good at riding this thing needs practice! )*
 
 
 
