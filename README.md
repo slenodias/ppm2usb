@@ -11,6 +11,13 @@ Commercial "RC flight simulator cables" do this one job: they read the transmitt
 
 > **Compatibility notice.** This project has been developed and tested **only with the Radiolink AT10 II**. Other transmitters may use different PPM voltage levels, polarity, frame timing or connector pinouts. See [Compatibility](#compatibility) and please report results for other radios.
 
+## Demo
+https://github.com/user-attachments/assets/2820df99-42f7-46e2-8c88-e9992d0a29b9
+
+*Video: FPV Freerider demo video.*
+
+
+
 ---
 
 ## Table of contents
