@@ -61,10 +61,9 @@ This is not meant to say commercial cables are bad. If you only want to fly, a c
 
 ```mermaid
 flowchart LR
-    TX["RC Transmitter (PPM Output)"]
-    MCU["Arduino Leonardo (ATmega32U4)"]
-    PC["Windows PC / Laptop"]
-    SIM["Drone or RC Simulator"]
+    TX["Radiolink AT10 II<br/>trainer / simulator port<br/>(PPM signal out)"] -->|"1 signal wire + GND"| MCU["Arduino Leonardo<br/>ATmega32U4<br/>decodes PPM with an interrupt"]
+    MCU -->|"USB HID<br/>(game controller)"| PC["Windows PC / laptop"]
+    PC --> SIM["Drone or RC simulator"]
 ```
 
 1. The transmitter outputs all of its channels as **one PPM signal** on the trainer/simulator port.
