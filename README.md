@@ -39,6 +39,9 @@ Commercial "RC flight simulator cables" do this one job: they read the transmitt
 
 ## Why build this?
 
+<img width="1541" height="592" alt="ppm_dongle_price" src="https://github.com/user-attachments/assets/c021c0ef-37de-479c-9312-4b960239a209" />
+
+
 Ready-made USB simulator cables are available, but they can be relatively expensive for a simple interface. For comparison, a 22-in-1 RC flight simulator cable was listed at ₹1,799 (MRP ₹2,600) on Amazon India when checked in October 2026. Prices may change.
 
 This DIY project provides an alternative using an Arduino Leonardo and a few wires, while helping you understand PPM signal decoding and USB HID game-controller programming.
@@ -176,6 +179,9 @@ Using a board with native USB (Leonardo, Pro Micro, Teensy, RP2040, ESP32-S2/S3)
 | 1 | Multimeter (strongly recommended) | To verify pins and voltage before connecting |
 
 ## Wiring
+
+<img width="521" height="213" alt="radiolink_ppm_port" src="https://github.com/user-attachments/assets/00063421-3218-4603-8ef0-f2799109a1c9" />
+
 
 The AT10 II manual lists these signals for the trainer/simulator port:
 
