@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-blueviolet)
 
-**Turn your RC transmitter's PPM trainer/simulator output into a USB game controller using an Arduino Leonardo and a few simple wire connections.**
+**Turn your RC transmitter's PPM trainer/simulator output into a USB game controller using a ATmega32U4 based development board such as Arduino Pro Micro or Leonardo and a few simple wire connections.**
 
 Commercial "RC flight simulator cables" do this one job: they read the transmitter's trainer/PPM output and present it to the PC as a controller. You can build the same thing yourself, understand every step, and adapt it to your own needs.
 
