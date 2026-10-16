@@ -369,9 +369,6 @@ Issues and pull requests are welcome, especially:
 - ports to other native-USB boards,
 - improvements to calibration, failsafe and documentation.
 
-## Built with Claude
-
-This repository was developed in collaboration with **Claude**, an AI assistant made by Anthropic. Claude helped draft the firmware, the explanations and this documentation. Hardware testing, verification and the final decisions are the repository owner's responsibility. Please review the code and the wiring notes yourself before powering anything, and report any mistakes you find.
 
 ## License and disclaimer
 
